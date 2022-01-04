@@ -9,11 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var happinessTextField: UITextField!
+    
+    @IBAction func addFood(_ sender: Any) {
+        let name = nameTextField.text
+        let happiness = happinessTextField.text
+        print("Comi \(name) com felicidade: \(happiness)")
     }
-
-
+    
 }
 
